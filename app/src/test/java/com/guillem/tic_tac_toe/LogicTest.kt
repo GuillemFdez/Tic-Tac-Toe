@@ -1,7 +1,6 @@
 package com.guillem.tic_tac_toe
 
 import org.junit.Test
-import kotlin.test.assertEquals
 
 class LogicTest {
 
@@ -23,7 +22,7 @@ class LogicTest {
     @Test
     fun testWinnerX() {
         val board = listOf("X", "X", "X", "", "O", "", "", "O", "")
-        assertEquals("O", checkWinner(board)) // Això fallarà perquè el guanyador és X
+        org.junit.Assert.assertEquals("X", checkWinner(board))
     }
 
     @Test
